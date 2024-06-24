@@ -1,0 +1,130 @@
+@font-face {
+  font-family: 'DM serif text'; /* Name your font family */
+  src: url('path/to/your/font/file.ttf'); /* Locate the .ttf file within your directory*/
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+background: linear-gradient(to bottom, #DCA4E1, rgb(243, 219, 223), #F7EFEF);
+width:80%;
+margin-left:auto;
+margin-right:auto;
+text-align: center;
+font-size: medium;
+
+}
+a {
+color:black;  
+}
+
+ul {
+display: table;
+margin: 0 auto;
+}
+
+
+.nav button { 
+  background:none; border:none; 
+  display: inline-flex;
+  flex-direction: row;
+  font-size: large;
+  font-weight: 100px;
+  font-family: DM serif text;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.nameIntro {
+  font-size: 28pt;
+  font-style: italic;
+}
+
+.myPhoto img {
+    padding: 5px;
+    width: 25%;
+    opacity: 85%;
+  }
+
+.aboutMe {
+  font-size: 20pt;
+  font-weight: 50px;
+}
+
+.flexContainer img {
+    width: 250px;
+}
+
+.workGrid img {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin:auto;
+  padding: 10px;
+}
+
+.workGrid p {
+  margin: auto;
+  width: 800px;
+  font-size: 12pt;
+}
+.SLFWRK {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-right: 50%;
+  margin-left: 50%;
+  scale: 0.8;
+}
+h4 {
+  font-size: 16pt;
+}
+.flexContainer {
+	display:flex;
+  width: 100%;
+	padding:10px;
+  flex-direction: row;
+  justify-content: space-bet;
+  gap: 200px;
+}
+
+<!- My UX Skills section coded using CSS flex -->
+
+.item1 {
+  grid-area: myArea;
+}
+
+.workGrid {
+    display:flex;
+    margin:auto;
+    flex-direction: column;
+    grid-template-rows:300px 300px 300px;
+    grid-template-columns:1fr;
+    grid-template-areas:"myArea" "myArea" "myArea";
+  }
+
+.contactButton {
+  display: flex;
+  scale: 25%;
+  justify-content: space-evenly;
+  gap: 500px;
+  margin-right: 15%;
+}
+
+button {
+  background-color:#eab5ef;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  font-family: DM serif text;
+}
+MEDIA QUERY AT BOTTOM
+@media only screen and (max-width 600) {}
+
+
+
+
